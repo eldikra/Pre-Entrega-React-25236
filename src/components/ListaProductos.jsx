@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { RiProductHuntLine } from "react-icons/ri";
-import "../Styles/ListaProductos.module.css";
+import "../styles/ListaProductos.module.css";
 
 const ListaProductos = ({ productos, agregarAlCarrito }) => {
   return (
