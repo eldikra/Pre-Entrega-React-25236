@@ -15,8 +15,8 @@ const Contacto = () => {
         <p>Podés comunicarte con nosotros mediante este formulario o por email.</p>
       </div>
       <form action="">
-        <input type="name" value={name} onChange={(e) => setName(e.target.value)} /> {/*input para nombre*/}
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} /> {/*input para email*/}
+        <input type="name" value={name} placeholder='Nombre' onChange={(e) => setName(e.target.value)} /> {/*input para nombre*/} 
+        <input type="email" value={email} placeholder='Email' onChange={(e) => setEmail(e.target.value)} /> {/*input para email*/}
         <button onClick={() => { enviarConsulta(name, email) }}>Enviar</button>
       </form>
     </>
