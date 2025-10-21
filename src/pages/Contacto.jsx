@@ -1,9 +1,12 @@
 import React, { use, useState } from 'react';
 import Nav from '../components/Nav';
-import { useSearchParams } from 'react-router-dom';
 
 const Contacto = () => {
   const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const enviarConsulta = (name,email) => {
+    alert(`Gracias ${name}, nos contactaremos a la brevedad al email ${email}`);
+  }
   return (
     <>
     <Nav />
@@ -12,9 +15,9 @@ const Contacto = () => {
         <p>Podés comunicarte con nosotros mediante este formulario o por email.</p>
       </div>
       <form action="">
-        <input type="text" />
-        <input type="text" />
-        <button onClick>Enviar</button>
+        <input type="Name" />
+        <input type="Email" />
+        <button onClick={() => { enviarConsulta(name, email) }}>Enviar</button>
       </form>
     </>
 

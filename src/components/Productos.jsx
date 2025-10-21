@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import ListaProductos from "./ListaProductos";
-import { RiProductHuntLine } from "react-icons/ri";
+
 
 const Productos = ({agregarAlCarrito}) => {
   const [productos, setProductos] = useState([]);
@@ -25,9 +25,7 @@ const Productos = ({agregarAlCarrito}) => {
   if (error) return <p>{error}</p>; // Muestra un mensaje de error si ocurre un problema
   return (
     <>
-    <h3>Productos <RiProductHuntLine /></h3>
     <ListaProductos productos={productos} agregarAlCarrito={agregarAlCarrito} /> 
-    {/* Pasa los productos y la función agregarAlCarrito como props al componente ListaProductos */}
     </>
   );
 }

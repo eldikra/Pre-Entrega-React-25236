@@ -1,4 +1,5 @@
 import { FiShoppingBag } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Carrito = ({ carrito, eliminarDelCarrito }) => { // Recibe el carrito, la función para eliminar productos y la función para vaciar el carrito como props
   return (
@@ -14,6 +15,7 @@ const Carrito = ({ carrito, eliminarDelCarrito }) => { // Recibe el carrito, la 
               <div key={index}>
                 {producto.prodName} - ${producto.prodPrice}
                 <button onClick={() => eliminarDelCarrito(index)}>Eliminar</button>
+                <Link to={`/ProdDetalles/${producto.id}`}>Detalle</Link>
               </div>
             ))}
           </ul>
