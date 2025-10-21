@@ -1,0 +1,5 @@
+API endpoint
+https://68e5853321dd31f22cc1fc2b.mockapi.io/api/products
+
+Iconos Usados
+https://react-icons.github.io/react-icons/icons/fi/
